@@ -27,5 +27,9 @@ return "Hello, NovoEndPointEclipse!";
     public @ResponseBody String greetingNovoEndPointIntelliJ() {
         return "Hello, NovoEndPointIntelliJ!";
     }
+    @RequestMapping("/main")
+    public @ResponseBody String greetingMain() {
+        return "Hello, Main!";
+    }
 
 } 
