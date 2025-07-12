@@ -27,5 +27,10 @@ return "Hello, NovoEndPointEclipse!";
     public @ResponseBody String greetingNovoEndPointIntelliJ() {
         return "Hello, NovoEndPointIntelliJ!";
     }
+    
+    @RequestMapping("/hotfix")
+    public @ResponseBody String greetingHotFix() {
+        return "Hello, Hotfix!";
+    }
 
 } 

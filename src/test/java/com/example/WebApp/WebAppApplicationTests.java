@@ -47,16 +47,23 @@ class WebAppApplicationTests {
   this.mockMvc.perform(get("/novoEndPointEclipse")) 
     .andDo(print()).andExpect(status().isOk()) 
     .andExpect(content() 
-     .string(containsString("Hello, NovoEndPointEclipse!"))); 
+     .string(containsString("Hello, NNovoEndPointEclipse!"))); 
  } 
 
- }
+ 
  @Test
  public void shouldReturnDefaultMessageNovoEndPointIntelliJ() throws Exception {
-  this.mockMvc.perform(get("/novoEndPointIntelliJ"))
+  this.mockMvc.perform(get("/NovoEndPointIntelliJ!"))
           .andDo(print()).andExpect(status().isOk())
           .andExpect(content()
                   .string(containsString("Hello, NovoEndPointIntelliJ!")));
+ }
+ @Test
+ public void shouldReturnDefaultMessageHotfix() throws Exception {
+  this.mockMvc.perform(get("/hotfix"))
+          .andDo(print()).andExpect(status().isOk())
+          .andExpect(content()
+                  .string(containsString("Hello, Hotfix!")));
  }
 
 } 
