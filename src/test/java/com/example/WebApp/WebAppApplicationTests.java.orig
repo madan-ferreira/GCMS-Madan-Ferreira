@@ -40,7 +40,7 @@ class WebAppApplicationTests {
     .andDo(print()).andExpect(status().isOk()) 
     .andExpect(content() 
      .string(containsString("Hello, NovoEndPoint!"))); 
-
+<<<<<<< HEAD
  } 
  @Test 
  public void shouldReturnDefaultMessageNovoEndPointEclipse() throws Exception { 
@@ -49,7 +49,7 @@ class WebAppApplicationTests {
     .andExpect(content() 
      .string(containsString("Hello, NovoEndPointEclipse!"))); 
  } 
-
+=======
  }
  @Test
  public void shouldReturnDefaultMessageNovoEndPointIntelliJ() throws Exception {
@@ -58,5 +58,5 @@ class WebAppApplicationTests {
           .andExpect(content()
                   .string(containsString("Hello, NovoEndPointIntelliJ!")));
  }
-
+>>>>>>> 88b4fcad1058d978be85352da1923fb9acbfc0c7
 } 

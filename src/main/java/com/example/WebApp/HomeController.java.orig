@@ -17,15 +17,15 @@ public @ResponseBody String greetingMadan() {
 public @ResponseBody String greetingNovoEndPoint() { 
 return "Hello, NovoEndPoint!";
 }
-
+<<<<<<< HEAD
 @RequestMapping("/novoEndPointEclipse") 
 public @ResponseBody String greetingNovoEndPointEclipse() { 
 return "Hello, NovoEndPointEclipse!";
 }
-
+=======
     @RequestMapping("/novoEndPointIntelliJ")
     public @ResponseBody String greetingNovoEndPointIntelliJ() {
         return "Hello, NovoEndPointIntelliJ!";
     }
-
+>>>>>>> 88b4fcad1058d978be85352da1923fb9acbfc0c7
 } 
