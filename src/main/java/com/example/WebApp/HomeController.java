@@ -13,4 +13,8 @@ return "Hello, World!";
 public @ResponseBody String greetingMadan() { 
  return "Hello, Mádan!"; 
 } 
+@RequestMapping("/novoEndPoint") 
+public @ResponseBody String greetingNovoEndPoint() { 
+return "Hello, NovoEndPoint!";
+}
 } 

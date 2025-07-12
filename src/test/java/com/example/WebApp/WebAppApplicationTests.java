@@ -34,4 +34,11 @@ class WebAppApplicationTests {
     .andExpect(content() 
      .string(containsString("Hello, Mádan!"))); 
  } 
+ @Test 
+ public void shouldReturnDefaultMessageNovoEndPoint() throws Exception { 
+  this.mockMvc.perform(get("/novoEndPoint")) 
+    .andDo(print()).andExpect(status().isOk()) 
+    .andExpect(content() 
+     .string(containsString("Hello, NovoEndPoint!"))); 
+ } 
 } 
